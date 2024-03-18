@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<html lang="pt-BR">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> Exercicios JavaScript</title>
+<style>
+    body{
+        background-color: rgb(146, 51, 234);
+        color: aliceblue;
+        text-align: center;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+    <h1> DOM </h1>
+    <p> Aqui vai o resultado</p>
+    <p> Aprendendo a usar o <strong>DOM</strong> em JavaScript</p> <!-- strong = tipo negrito -->
+    <div id="msg"> Clique em mim</div>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]//para pegar o que tem no primeiro paragrafo(como listas)
+        document.write("Está escrito assim " + p1.innerText)// innerText = texto que está dentro do primero paragrafo
+        let d = document.querySelector('div#msg')
+        d.style.background = "black"
+
+
+    </script>
+
+</body>
+</html>
